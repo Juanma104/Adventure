@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <style>
+      body{
+        background-color: rgb(232, 230, 230);
+      }
+        header {
+  background-color: rgb(129, 33, 129);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: serif;
+}
+
+h1 {
+  font-size: 3em;
+  margin: 0; 
+}
+
+header img {
+  max-width: 65%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  transform: translateY(-2px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #173243;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  margin: 50px auto;
+  max-width: 1000px;
+  padding: 30px;
+  background-color: lightgray;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-top: 0;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 20px;
+}
+
+.description {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.description p {
+  font-size: 1.2em;
+}
+
+button {
+  background-color: #203e56;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #173243;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.retro-button {
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 18px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.retro-button:hover {
+  background-color: #FF9800;
+}
+
+.retro-button:active {
+  top: 2px;
+  box-shadow: none;
+}
+
+.retro-button:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scaleX(2) translateY(-50%);
+  transform-origin: 0 50%;
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.retro-button:hover:before {
+  transform: scaleX(0) translateY(-50%);
+  opacity: 1;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.feature {
+  text-align: center;
+  width: 30%;
+}
+
+.feature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.feature img {
+  max-width: 70%;
+  height: 45%;
+  margin-bottom: 20px;
+}
+
+.feature h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 1.2em;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
+}
+
+.footer a:hover {
+  color: #FFC107;
+  border-bottom: 1px solid #FFC107;
+}
+
+    </style>
+  <head>
+    <title>Adventure</title>
+  </head>
+  <body>
+    <header>
+      <h1><img src="./semilogo.png"></h1>
+      <nav>
+        <ul>
+          <li><a href="https://youtu.be/oHg5SJYRHA0"><button class="retro-button">Jugar</button></a></li>
+        </ul>
+      </nav>    
+    </header>
+
+    <section>
+      <h2>Bienvenidos a Adventure</h2>
+      <div class="container">
+        <img src="./Logo.jpg" alt="Imagen 1">
+      </div>
+      <div class="description">
+        <p>Descubre el universo de Adventure, donde tendrás que luchar contra monstruos, conseguir poderosas armas y conseguir que Dylan recupere sus preciados recuerdos.</p>
+        <a href="https://youtu.be/oHg5SJYRHA0"><button>¡Jugar ahora!</button></a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Características principales</h2>
+      <div class="features">
+        <div class="feature">
+          <img src="Mapa.jpg" alt="Feature 1">
+          <h3>Modo Surpervivencia</h3>
+          <p>Embárcate en un mundo fantástico lleno de peligros y aventuras que te llevarán hasta el límite.</p>
+        </div>
+        <div class="feature">
+          <img src="Dylan.png" alt="Feature 2">
+          <h3>Personajes</h3>
+          <p>Multitud de aliados y compañeros que nos ayudarán en la mejora de nuestro personaje y en el conocimiento de este mundo para conseguir combatir las fuerzas del mal.</p>
+        </div>
+        <div class="feature">
+          <img src="jefe_caballero.png" alt="Feature 3">
+          <h3>Enemigos</h3>
+          <p>Gran cantidad de enemigos y jefes de salas que nos haran la vida imposible para cumplir nuestro objetivo.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Adventure © 2022-2023 "Adventure" es una marca comercial de Adventure Company AC.</p>
+    </footer>
+  </body>
+</html>
